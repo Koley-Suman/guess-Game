@@ -158,6 +158,8 @@ number.addEventListener("keyup", function (event) {
    if (key === "Enter") {
       play();
    }
+
+   
 });
 
 
