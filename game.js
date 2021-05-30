@@ -137,8 +137,6 @@ function play() {
          phc.innerHTML = "Highscore: " + Hscore;
       }
    }
-
-
    else {
       massage.innerHTML = "Incorrect Number!"
       massage.style.color = "red";
