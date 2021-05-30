@@ -1,0 +1,252 @@
+body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+.hdder{
+    size: 100vh;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url(5.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    background-attachment: fixed;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    padding: 14px;
+    /* overflow: hidden; */
+    color: white;
+    /* background: linear-gradient(120deg,rgb(245, 8, 119),rgba(230, 15, 238, 0.979),blue); */
+    font-family: 'Audiowide', cursive;
+    font-family: 'Bangers', cursive;
+    font-family: 'Orbitron', sans-serif;
+}
+.blur{
+    filter: blur(5px);
+    pointer-events: none;
+    /* transition: all 2s ease-in; */
+}
+
+.container{
+    justify-content: center;
+    text-align: center;
+    color: rgb(204, 22, 174);
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+   padding: 14px;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease-in;
+}
+.hidden{
+    display: none;
+    /* transition: all 0.5s ease; */
+}
+h1{
+    margin-bottom: 6px;
+    /* text-shadow: 1px 1px 3px #000000; */
+}
+.sscore{
+    margin-top: 9px;
+    text-align: center;
+    color: rgb(201, 10, 137);
+}
+#sc{
+    width: 50%;
+}
+#hc{
+    width: 50%;
+}
+.hiden-score{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#sreset{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 25px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease-in;
+    outline: none;
+
+}
+:hover#sreset{
+    background-color: white;
+    color: green;
+}
+.SecretNumber{
+    width: 15%;
+    /* font-size: 75px; */
+    background-color: white;
+    margin: auto;
+    color: rgb(156, 6, 156);
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.center{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: rgb(15, 255, 47); */
+}
+.right{
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    width: 50%;
+    /* background-color: yellow; */
+    padding: 14px;
+
+}
+.guessMassage{
+    color: rgb(9, 184, 9);
+    justify-content: center;
+    text-align: center;
+    /* padding-bottom: 46px; */
+    font-size: 37px;
+    color: rgb(156, 6, 156);
+    width: 53%;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+    /* text-shadow: 2px 2px 4px #2b2929; */
+    background:white; 
+
+    
+}
+.left{
+    width: 50%;
+    
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: red; */
+}
+.check{
+    font-size: 20px;
+    /* font-family: sans-serif; */
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: rgb(30, 189, 25);
+    outline: none;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Bangers', cursive;
+    font-family: 'Orbitron', sans-serif;
+}
+:hover.check{
+    background-color: rgb(5, 160, 95);
+    transition: all 0.4s ease;
+}
+.position{
+    display: flex;
+}
+.guessNumber{
+    margin-top: 142px;
+    height: 40px;
+    font-size: 44px;
+    width: 20%;
+    background-color: rgb(255, 255, 255); 
+    border: 1px solid white;
+    border: none;
+    /* position: absolute; */
+    text-decoration: none;
+    border-radius: 6px;
+    color: rgb(194, 37, 199);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Bangers', cursive;
+    font-family: 'Orbitron', sans-serif;
+
+   /* position: sticky; */
+  /* padding-left: 20px; */
+  text-align: center;
+    
+}
+.reset{
+    font-size: 20px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+@media(max-width:1000px) {
+    body{
+        padding: 18px;
+        margin: 0px;
+        padding: 0px;
+        margin: 0px;
+        height: 100vh;
+        size: 100vh;
+        overflow: scroll;
+    }
+    .hdder{
+        height: 125%;
+        size: 200%;
+        background-size: cover;
+        background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url(5.jpg);
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .center{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .SecretNumber{
+        width: 25%;
+    }
+    .guessNumber{
+        font-size: 70px;
+        width: 90px;
+        height: 70px;
+    }
+    .position{
+        display: grid;
+        
+    }
+    .left,.right{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .guessNumber{
+        margin-top: 60px
+    }
+    .check{
+        font-size: 25px;
+    }
+    .guessMassage{
+        padding-bottom: 36px;
+        width: 97%;
+    }
+    .label-Score{
+        margin-bottom:5px;
+    }
+    .label-Highscore{
+        margin-top: 5px;
+    }
+    .right{
+        padding-left: 0px;
+    }
+    .container{
+        width: 75%;
+    }
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=Orbitron:wght@800&display=swap" rel="stylesheet">
+    
+    <title>welcome to online game</title>
+</head>
+
+<body>
+
+    <section class="hdder ">
+        <!-- <img src="5.jpg" alt=""> -->
+
+        <button type="reset" class="reset ">Again!</button>
+        <header class="center">
+            <p class="hint">(Between 1-20)</p>
+            <p>Guess My Number!</p>
+            
+            <h2 class="SecretNumber">?</h2>
+            
+
+
+        </header>
+        
+        <section class="position">
+            <section class="left">
+                <input type="number" class="guessNumber">
+                <br>
+                <button class="check">Check</button>
+            </section>
+            <section class="right">
+                <p class="guessMassage">Start Guessing.....</p>
+                <p class="label-Score">Score: <span class="score">6
+
+                    </span></p>
+                <p class="label-Highscore">Highscore: <span class="highScore">0
+
+                    </span></p>
+            </section>
+        </section>
+    </section>
+    <section>
+        <div class="container hidden">
+            <h2 class="SSecretNumber"></h2>
+            <h1 class="sugess">You Lost The Game!</h1>
+            <div class="hiden-score">
+                <p class="sscore" id="sc"></p>
+                <p class="sscore" id="hc"> </p>
+            </div>
+            <button type="reset" id="sreset" class="reset">Again!</button>
+        </div>
+
+    </section>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
