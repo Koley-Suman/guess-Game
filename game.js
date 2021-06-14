@@ -1,5 +1,5 @@
 // DOM SELECT
-const again = document.querySelectorAll(".reset");
+const again = document.querySelectorALL(".reset");
 const secretnumber = document.querySelector(".SecretNumber");
 const massage = document.querySelector(".guessMassage");
 let number = document.querySelector(".guessNumber");
@@ -19,9 +19,14 @@ let Nscore = 6;
 let Hscore = 0;
 let snumber = Math.trunc(Math.random() * 20) + 1;
 
+console.log(snumber);
+
+
 
 function play() {
+   let clnumber =(number.value)-snumber;
    console.log(Number(number.value), typeof Number(number.value));
+   console.log(clnumber,typeof clnumber);
    console.log(snumber, typeof snumber);
    score.textContent = Nscore;
    if (Number(!number.value)) {
@@ -64,7 +69,7 @@ function play() {
       console.log(snumber);
 
    }
-   else if (Number(number.value) - 1 === snumber || Number(number.value) - 2 === snumber || Number(number.value) - 3 === snumber) {
+   else if (clnumber < 4 & clnumber > 0) {
       if (Nscore > 1) {
          Nscore--;
          massage.innerHTML = "''" + number.value + "''" + " Very close from Guessnumber"
@@ -103,7 +108,7 @@ function play() {
       }
    }
 
-   else if (Number(number.value) + 1 === snumber || Number(number.value) + 2 === snumber || Number(number.value) + 3 === snumber) {
+   else if (clnumber > -4 & clnumber < 0) {
       if (Nscore > 1) {
          Nscore--;
          massage.innerHTML = "''" + number.value + "''" + " Very close from Guessnumber"
@@ -163,10 +168,11 @@ number.addEventListener("keyup", function (event) {
 
 
 for (let i = 0; i < again.length; i++) {
-   console.log(again[i]);
+   console.log("again "+ again.length);
    again[i].addEventListener('click', function () {
       Nscore = 6;
       snumber = Math.trunc(Math.random() * 20) + 1;
+      console.log(Number(snumber));
       container.classList.add("hidden")
       hdder.classList.remove("blur")
       secretnumber.innerHTML = "?"
