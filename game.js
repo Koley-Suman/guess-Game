@@ -1,5 +1,5 @@
 // DOM SELECT
-const again = document.querySelectorALL(".reset");
+const again = document.querySelectorAll(".reset");
 const secretnumber = document.querySelector(".SecretNumber");
 const massage = document.querySelector(".guessMassage");
 let number = document.querySelector(".guessNumber");
