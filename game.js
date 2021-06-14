@@ -24,7 +24,7 @@ console.log(snumber);
 
 
 function play() {
-   let clnumber =(number.value)-snumber;
+   let clnumber = Number(number.value)-snumber;
    console.log(Number(number.value), typeof Number(number.value));
    console.log(clnumber,typeof clnumber);
    console.log(snumber, typeof snumber);
