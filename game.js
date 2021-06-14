@@ -69,7 +69,7 @@ function play() {
       console.log(snumber);
 
    }
-   else if (clnumber < 4 & clnumber > 0) {
+   else if (clnumber < 4 & clnumber > 0 || clnumber > -4 & clnumber < 0) {
       if (Nscore > 1) {
          Nscore--;
          massage.innerHTML = "''" + number.value + "''" + " Very close from Guessnumber"
@@ -107,25 +107,6 @@ function play() {
          phc.innerHTML = "Highscore: " + Hscore;
       }
    }
-
-   else if (clnumber > -4 & clnumber < 0) {
-      if (Nscore > 1) {
-         Nscore--;
-         massage.innerHTML = "''" + number.value + "''" + " Very close from Guessnumber"
-         score.textContent = Nscore;
-         massage.style.color = "rgb(156, 6, 156)";
-
-         console.log(Nscore);
-      } else {
-         massage.innerHTML = "You lost the Game!"
-         hdder.classList.add("blur")
-         container.classList.remove("hidden")
-         psc.innerHTML = "Score: 0 "
-         phc.innerHTML = "Highscore: " + Hscore;
-
-      }
-   }
-
    else if (Number(number.value) < snumber & Number(number.value) > 0) {
       if (Nscore > 1) {
          Nscore--;
@@ -161,8 +142,6 @@ number.addEventListener("keyup", function (event) {
    if (key === "Enter") {
       play();
    }
-
-   
 });
 
 
